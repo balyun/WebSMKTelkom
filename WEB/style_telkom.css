@@ -1,0 +1,533 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+div.menu{
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to top, #00000000 0,#2d2d2d 130%);
+  position: fixed;
+  z-index: 1;
+}
+
+div.menu ul{
+  list-style-type: none; /*menghilangkan bullet pada list*/
+  overflow: hidden;/*menghilangkan scroll bar*/
+  padding: 0;/*jarak antara border dengan konten (jarak dalam)*/
+  margin: 0;/*jarak antara tiap elemen (jarak luar)*/
+}
+
+div.menu li{
+  float: right;/*posisi elemen sebelah kanan*/
+}
+
+div.menu li a{
+  text-decoration: none;/*menghilangkan garis bawah pada link*/
+  color: #fff;/*warna font pada Link*/
+  text-align:center;/*rata tengah teks*/
+  padding: 18px 20px;/*13 for top & bottom, 15 for right & left*/
+  font-size:17px;/*ukuran tulisan*/
+  display: block;/*menampilkan elemen*/
+}
+
+div.menu li a:hover{/*mouseover ->ketika mouse meraba elemen*/
+  border-top: 2px solid red;
+  color: #CC0000;
+}
+
+div.menu img{
+width: 150px;
+height: auto;
+margin:10px;
+margin-left: 40px;
+margin-top: 20px;
+}
+
+div.header{
+  width: 100%;
+  height:700px;
+  background-image: url("moklet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*ini untuk mengatur ukuran background*/
+  /*cover digunakan untuk me fill kan gambar*/
+  background-position: center;
+  float: left;
+}
+
+div.bayangan{
+  width: 100%;
+  height: 700px;
+  background:#000;
+  opacity:0.5;
+  float: left;
+}
+
+div.header h1{
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 150;
+  left: 350px;
+  margin-top: 75px;
+  font-weight: normal;
+  font-family: "Arial";
+  font-size: 50px;
+}
+div.header h1 img{
+  width: 100px;
+  height: auto;
+}
+div.header h3{
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 260px;
+  left: 500px;
+  margin-top: 75px;
+  font-weight: normal;
+  font-family: "Arial";
+  font-size: 25px;
+}
+
+div.about{
+  width: 100%;
+  height:400px;
+  padding:0;
+  float: left;
+  margin-top: 20px;
+}
+
+div.about .left{
+  width:50%;
+  height:100;
+  float: left;
+}
+
+div.about .left h1{
+  text-align: right;
+  text-transform:uppercase;/*huruf kapital*/
+  font-size: 60px;
+  font-family:"arial";
+  font-weight: 20;
+  border-right: 5px solid red;
+  padding-right: 10px;
+}
+
+div.about .left p{
+  text-align:right;
+  font-size: 20px;
+  color: grey;
+}
+div.about .right{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+div.about .right img{
+  width: 400px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 40px;
+  border: 15px solid #000;
+  border-radius: 20px
+}
+div.layanan{
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  float: left;
+  padding: 30px;
+}
+
+div.layanan .box{
+  width: 20%;
+  height: 100%;
+  float: left;
+  margin: 20px;
+}
+div.layanan .box .bunder{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /*background: red;*/
+  margin: 0 auto;
+  display: flex;
+}
+div.layanan .box .bunder span{
+  font-size: 50px;
+  color: #fff;
+  margin: auto;
+}
+div.layanan .box .deskripsi{
+  margin-top: 10px;
+  text-align: center;
+  color: grey;
+  font-size:17px;
+}
+div.layanan .box h3{
+  text-align:center;
+  font-size: 25px;
+  font-weight: normal;
+  font-family: Open Sans, sans-serif;
+}
+.text-grey{color:grey;}
+.text-green{color:green;}
+.text-blue{color:blue;}
+.text-navy{color:navy;}
+.text-red{color: red;}
+
+.bg-grey{ background: grey; }
+.bg-green{ background: green; }
+.bg-blue{ background: blue; }
+.bg-navy{ background: navy; }
+
+div.penghargaan{
+  width: 100%;
+  height: 650px;
+  background: url("parallax1.jpg") no-repeat center;
+  background-size: cover;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+div.penghargaan .gelap{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,#000,#000, transparent);
+  float : left;
+  opacity: 0.7;
+}
+div.penghargaan .left{
+  width:50%;
+  text-align:right;
+  border-right: 5px solid red;
+  padding-right: 20px;
+  position: absolute;
+  margin-top: 200px;
+}
+div.penghargaan .left h1{
+  margin:2px;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: lighter;
+}
+div.penghargaan .left h2{
+  margin:2px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color:#fff;
+  font-weight: lighter;
+}
+div.penghargaan .left h3{
+  margin:2px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color:#fff;
+  font-weight: lighter;
+}
+div.penghargaan .right{
+  position: absolute;
+  left: 700px;
+  width: 50%;
+  height: auto;
+  text-align: left;
+  margin-top: 200px;
+  float: left;
+}
+div.penghargaan .right img{
+  width: 100px;
+  height: auto;
+}
+
+div.studi{
+  width: 100%;
+  height: 300px;
+  float: left;
+  position: flex;
+  margin-top: 100px;
+}
+div.studi .bunder{
+  width: 100px;
+  height: 100px;
+  background: #CC0000;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
+div.studi .bunder span{
+  font-size: 50px;
+  color: #fff;
+  margin: auto;
+  display: flex;
+}
+div.studi h1{
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color:#000;
+}
+div.studi p{
+  color: grey;
+  text-align: center;
+  font-size: 20px;
+}
+div.prodi{
+  width: 100%;
+  height: 500px;
+  float: left;
+  background: linear-gradient(#fff 250px,#CC0000 250px);
+}
+div.prodi .jurusan{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+div.prodi .jurusan h3{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin: 2px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.prodi .jurusan p{
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.prestasi{
+  width: 100%;
+  height: 520px;
+  float: left;
+  background: linear-gradient(white 400px,#CC0000 120px);
+}
+div.prestasi .left{
+  width: 40%;
+  height: auto;
+  float: left;
+}
+div.prestasi .left h1{
+  margin-left: 70px;
+  margin-top: 70px;
+  color: black;
+  font-size: 40px;
+  border-left: 5px solid red;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: lighter;
+}
+
+div.prestasi .left p{
+  margin-left: 70px;
+  color: grey;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.prestasi .right{
+  width: 60%;
+  height: auto;
+  float: left;
+  /* setelah itu kita atur gambarnya */
+}
+div.prestasi .right img{
+  width: 500px;
+  height: auto;
+  border: 20px solid grey;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 50px;
+}
+
+div.prestasi .footer{
+position: relative;
+left: 30px;
+bottom: 65px;
+}
+div.prestasi .footer h3{
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+div.info{
+  width: 100%;
+  height: 300px;
+  float: left;
+  position: flex;
+  margin-top: 50px;
+}
+div.info .bunder{
+  width: 100px;
+  height: 100px;
+  background: #CC0000;
+  border-radius: 50%;
+  display: flex;
+  margin: auto; 
+}
+div.info .bunder span{
+  font-size: 50px;
+  color: #fff;
+  margin: auto;
+  display: flex;
+}
+div.info h1{
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color:#000;
+}
+div.info p{
+  color: grey;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.update{
+  width: 100%;
+  height: 300px;
+  float: left;
+  background: #CC0000;
+  position: relative;
+}
+div.update .centang{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #CC0000;
+  display: flex;
+  position: absolute;
+  top: -50px;
+  left: 40px;
+}
+div.update .centang span{
+  color: #fff;
+  margin: auto;
+  font-size: 30px;
+}
+
+div.update .left{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+div.update .left h1{
+  margin-top: 60px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.update .left p{
+  color: #fff;
+  font-size: 20px;
+  margin-left: 40px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+div.update .right .bunder{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 20px;
+  display: flex;
+  float: left;
+}
+
+div.update .right .bunder span{
+  font-size: 40px;
+  color: #CC0000;
+  margin: auto;
+}
+div.info{
+  width: 100%;
+  height: 300px;
+  float: left;
+  position: flex;
+  margin-top: 50px;
+}
+div.info .bunder{
+  width: 100px;
+  height: 100px;
+  background: #CC0000;
+  border-radius: 50%;
+  display: flex;
+  margin: auto; 
+}
+div.info .bunder span{
+  font-size: 50px;
+  color: #fff;
+  margin: auto;
+  display: flex;
+}
+div.info h1{
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color:#000;
+}
+div.info p{
+  color: grey;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+div.foo{
+  width: 100%;
+  height: auto;
+  float: left;
+  background: 	#282828;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+div.foo .col{
+  width: 25%;
+  height: auto;
+  color: #fff;
+  padding: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+div.foo .col .fab{
+  margin: 5px;
+  font-size: 20px;
+}
+div.footers{
+  width: 100%;
+  height: auto;
+  float: left;
+  background: #000;
+}
+div.footers p{
+  margin-left: 15px;
+  color: grey;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
